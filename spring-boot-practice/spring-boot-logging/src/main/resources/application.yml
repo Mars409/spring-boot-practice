@@ -1,0 +1,9 @@
+logging:
+  level:
+    root: INFO
+    org.springframework: DEBUG
+    com.example.demo: DEBUG
+  # 禁用控制台日志（可选）
+  console:
+    enabled: false
+  # 注意：YAML中直接设置日志文件路径的能力有限，通常仍需依赖logback.xml或log4j2.xml
