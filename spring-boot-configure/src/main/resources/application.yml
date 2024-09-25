@@ -1,0 +1,70 @@
+#family:
+# family-name: "happy"
+# father: ${father.name:zhangsan}
+# mother: "Rose"
+# child: "Tom"
+# age: ${random.int(3,30)}
+#father:
+#  name: "张三"
+#
+server:
+  host: "localhost"
+  port: 8080
+  context-path: "/api"
+
+person:
+  first-name: "${first-name:john}"
+  last-name: "${last.name:Doe}"
+  age: ${random.int(20,50)}
+  id: ${random.uuid}
+  phone: "${phone.number:12345678}"
+first-name: "zh"
+
+student:
+  name: 张小飞
+  age: 20
+  happy: true
+  birth: 2004/01/01
+  map: {k1: v1,k2: v2}
+  list:
+    - code
+    - read
+    - music
+  dog:
+    name: 虎子
+    age: 11
+
+spring:
+  mail:
+   host: smtp.qq.com
+   username: 2081765286@qq.com
+   password: grgpgqbymaccdhgg
+   properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+
+db:
+  url: jdbc:mysql://127.0.0.1:3306/spring-boot?userUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true
+  username: root
+  password: 123456
+  driver-class-name: com.mysql.cj.jdbc.Driver
+
+jwt:
+  secret: mySecretKey
+  expiration: 3600000
+
+custom:
+  qrcode:
+    content: "https://www.baidu.com"
+  log:
+    level: "INFO"
+  backup:
+    location: D:\HuaweiMoveData\Users\20817\Desktop\spring-boot-practice\log
+
+aliyun:
+  oss:
+    endpoint: https://oss-cn-nanjing.aliyuncs.com
+    accessKeyId: LTAI5t5eo6rtVSNYAM5jivCQ
+    accessKeySecret: TFYLOKC6GlHw4C2J8ytSWvdyUjetNO
+    bucketName: zhanghe-oss
+
